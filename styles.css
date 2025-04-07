@@ -129,6 +129,115 @@ button:hover {
   background: linear-gradient(var(--clr--primary), var(--clr--white));
 }
 
+.julio-image {
+  width: 250px;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.5s ease;
+  animation: fadeInZoom 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.julio-image:hover {
+  transform: scale(1.05);
+}
+
+.flip-container {
+  perspective: 1000px;
+  width: 250px;
+  height: auto;
+}
+
+.flip-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  z-index: 2;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.julio-image {
+  width: 250px;
+  height: auto;
+  display: block;
+}
+
+.cat-meme {
+  width: 50px;
+  height: auto;
+}
+
+.julio-body {
+  background-color: lightblue;
+}
+
+.julio-info {
+  text-align: center;
+  padding-top: 200px;
+}
+
+.julio-paragraph {
+  text-align: center;
+  text-anchor: middle;
+}
+.github {
+  width: 50px;
+  height: auto;
+
+}
+
+@keyframes breathe {
+    0% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.2); /* Scale up */
+    }
+    100% {
+        transform: scale(1); /* Return to normal size */
+    }
+}
+
+.github {
+    width: 50px; /* Set the width of the GitHub logo */
+    height: auto; /* Maintain aspect ratio */
+    animation: breathe 2s ease-in-out infinite; /* Apply the breathing animation */
+}
+=======
 /* Sherin Bio page styling */
 .sherin-page {
   font-family:  Arial, sans-serif;
@@ -139,7 +248,6 @@ button:hover {
   line-height: 1.6;
 }
 
-
 .sherin-page header {
   margin-bottom: 60px;
   text-align: center;
@@ -147,6 +255,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
 }
+
 .sherin-page .line {
   color: white;
 }
@@ -252,4 +361,6 @@ button:hover {
   gap: 1rem;
   justify-content: end;
 }
+
+
 
