@@ -114,14 +114,12 @@ h2 {
   margin: 0 0 10px;
 }
 
-/* Initially hide bio details */
 .bio {
   display: none;
   margin-top: 10px;
   color: var(--clr--white);
 }
 
-/* Button styling */
 button {
   background: var(--clr--primary);
   color: var(--clr--white);
@@ -135,3 +133,82 @@ button {
 button:hover {
   background: linear-gradient(var(--clr--primary), var(--clr--white));
 }
+
+
+/* Sherin Bio page styling */
+.sherin-page {
+  font-family:  Arial, sans-serif;
+  background-color:  #f4f4f4;
+  color: black;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+
+.sherin-page header {
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+}
+.sherin-page .line {
+  color: white;
+}
+
+
+.sherin-page .IF,
+.sherin-page .FT,
+.sherin-page .FC,
+.sherin-page .ME{
+  background-color: #ffffff;
+  border-left: 6px solid #250060;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+.sherin-page h2 {
+  color: #250060;
+  margin-top: 30px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+.sherin-page h3 {
+  color: #444;
+  margin-top: 10px;
+}
+
+
+.sherin-page img {
+  max-width: 300px;
+  height: auto;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.sherin-page ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  margin-top: 10px;
+}
+
+.sherin-page li {
+  margin-bottom: 10px;
+}
+
+.sherin-page .homebtn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
